@@ -1,16 +1,18 @@
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
-
-import Page2 from '@Pages/Page2';
-import Page404 from '@Pages/Page404';
-import Sample from '@Components/Sample';
+import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import Home from '@Pages/Home';
+import About from '@Pages/About';
+import Contact from '@Pages/Contact';
+import Projects from '@Pages/Projects';
 
 const Routing = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={Sample} />
-                <Route path="/page2" component={Page2} />
-                <Route component={Page404} />
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/projects" component={Projects} />
+                <Redirect to="/" />
             </Switch>
         </BrowserRouter>
     );

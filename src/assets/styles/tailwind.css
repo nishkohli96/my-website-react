@@ -4,25 +4,32 @@
 
 @layer components {
     /* w-max for width: fit-content */
-    .root {
-        @apply w-screen h-screen p-5 bg-red-200;
+    .fullscreen {
+        @apply w-screen h-screen  bg-bodycol;
     }
     .content {
-        @apply p-3 m-3 bg-white w-max;
+        @apply px-5 py-14 md:pt-24 bg-bodycol text-cocowhite mt-5;
     }
-    .heading {
-        @apply text-3xl text-navyb mx-auto mb-5 font-bold;
+    .navbar {
+        @apply p-2 md:p-5 bg-headercol text-cocowhite w-screen;
+    }
+    .navlink {
+        @apply mx-2 text-sm sm:text-xl sm:pt-2 md:text-2xl md:mx-5  inline font-bold;
+    }
+    .hreflink {
+        @apply underline text-blue-300;
+    }
+    .respdiv {
+        @apply max-w-xs sm:max-w-sm md:max-w-lg;
     }
     .sub-heading {
-        @apply text-xl text-gray-400 m-3;
+        @apply text-xl md:text-3xl;
     }
-    .link {
-        @apply m-4 text-red-600 p-2 bg-green-200;
+    .icon {
+        @apply mx-3 h-10 w-10;
     }
-    .errtext {
-        @apply mt-2 text-red-400;
-    }
-    .code {
-        @apply bg-gray-300 text-black px-3 py-1;
-    }
+}
+
+.link {
+    cursor: pointer;
 }
