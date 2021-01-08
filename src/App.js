@@ -2,11 +2,7 @@ import Routing from '@Components/Routing';
 import '@Styles/tailwind.css';
 
 function App() {
-    return (
-        <div className="root">
-            <Routing />
-        </div>
-    );
+    return <Routing />;
 }
 
 export default App;

@@ -1,17 +1,14 @@
-import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 import Hi from '@Components/Hi';
-import Header from '@Components/Header';
 import Footer from '@Components/Footer';
 
 const IndexPage = () => {
-    return (
-        <div className="fullscreen">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Home</title>
-            </Helmet>
+    useEffect(() => {
+        document.title = `Home`;
+    }, []);
 
-            <Header />
+    return (
+        <div>
             <div className="content">
                 <Hi />
             </div>

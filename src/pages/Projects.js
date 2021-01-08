@@ -1,18 +1,15 @@
-import { Helmet } from 'react-helmet';
-import Header from '@Components/Header';
+import { useEffect } from 'react';
 import Footer from '@Components/Footer';
 import ProjectItem from '@Components/ProjectItem';
 import { ProjectsList } from '@Constants/ProjectsList';
 
 const Projects = () => {
-    return (
-        <div className="fullscreen">
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Projects</title>
-            </Helmet>
+    useEffect(() => {
+        document.title = `Projects`;
+    }, []);
 
-            <Header />
+    return (
+        <div>
             <div className="content">
                 <div className="text-center">
                     <p className="sub-heading mb-5 text-red-400">

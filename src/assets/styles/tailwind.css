@@ -8,7 +8,7 @@
         @apply w-screen h-screen  bg-bodycol;
     }
     .content {
-        @apply px-5 py-14 md:pt-24 bg-bodycol text-cocowhite mt-5;
+        @apply px-5 py-14 md:pt-24 bg-bodycol text-cocowhite;
     }
     .navbar {
         @apply p-2 md:p-5 bg-headercol text-cocowhite w-screen;

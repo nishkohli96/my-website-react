@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as Logo from '../assets/images/nish.jpg';
+import logo from '../assets/images/logo.png';
 
 const Header = () => {
     return (
@@ -9,8 +9,8 @@ const Header = () => {
                 <div className="hidden sm:inline-block col-span-1">
                     <Link to="/">
                         <img
-                            src={Logo}
-                            alt="nish"
+                            src={logo}
+                            alt="logo"
                             className="w-10 h-10 md:w-15 md:h-15"
                         />
                     </Link>
