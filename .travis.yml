@@ -4,4 +4,4 @@ services:
     - docker
 
 before_install:
-    - docker build -t nish1896/react-ts -f Dockerfile.dev .
+    - docker build -t nish1896/my-website-react -f Dockerfile.dev .
