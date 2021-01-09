@@ -21,9 +21,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "build:style":"tailwind build src/assets/styles/tailwind.css -o src/assets/styles/tailwind-build.css",
-    "start": "yarn build:style && react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build-styles": "tailwindcss build src/assets/styles/tailwind.css -o src/assets/styles/index.css",
+    "start": "yarn build-styles && react-app-rewired start",
+    "build": "yarn build-styles && react-app-rewired build",
     "test": "echo \"Error: no test specified\" && exit 0",
     "eject": "react-scripts eject"
   },

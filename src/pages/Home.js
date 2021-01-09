@@ -12,7 +12,7 @@ const IndexPage = () => {
             <div className="content">
                 <Hi />
             </div>
-            <div className="lh:fixed md:fixed bottom-0">
+            <div className="mobile:fixed md:fixed bottom-0">
                 <Footer />
             </div>
         </div>
