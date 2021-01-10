@@ -1,4 +1,4 @@
-import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import { Route, Switch, HashRouter, Redirect } from 'react-router-dom';
 import Home from '@Pages/Home';
 import About from '@Pages/About';
 import Contact from '@Pages/Contact';
@@ -8,7 +8,7 @@ import Header from '@Components/Header';
 const Routing = () => {
     return (
         <div className="fullscreen">
-            <BrowserRouter>
+            <HashRouter>
                 <Header />
                 <Switch>
                     <Route exact path="/" component={Home} />
@@ -17,7 +17,7 @@ const Routing = () => {
                     <Route path="/projects" component={Projects} />
                     <Redirect to="/" />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 };
