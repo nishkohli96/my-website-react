@@ -21,7 +21,7 @@ export const ProjectsList = [
         name: 'my-website',
         desc:
             'The Repository that holds the code to what you see on your screen right now. ',
-        url: 'https://github.com/nishkohli96/my-website',
+        url: 'https://github.com/nishkohli96/my-website-react',
     },
     // {
     //     name: "react-app-template",
