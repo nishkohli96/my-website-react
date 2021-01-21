@@ -41,7 +41,7 @@ const Projects = () => {
                     </p>
                 </div>
             </div>
-            <div className="md:fixed bottom-0">
+            <div className="mt-10 md:fixed bottom-0">
                 <Footer />
             </div>
         </div>

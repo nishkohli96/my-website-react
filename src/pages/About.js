@@ -16,7 +16,7 @@ const About = () => {
                         src={nish}
                         alt="nish"
                     />
-                    <div className="mx-auto mt-5">
+                    <div className="mx-auto mt-10">
                         <p className="mb-5 text-lg md:text-xl respdiv lg:max-w-lg lg:leading-relaxed leading-8">
                             <span className="text-red-600 text-3xl">I</span> was
                             born in June 1996 in Ludhiana, Punjab{' '}
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="md:fixed bottom-0">
+            <div className="mt-10 md:fixed bottom-0">
                 <Footer />
             </div>
         </div>

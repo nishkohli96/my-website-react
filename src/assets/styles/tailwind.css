@@ -5,10 +5,10 @@
 @layer components {
     /* w-max for width: fit-content */
     .fullscreen {
-        @apply w-screen h-screen  bg-bodycol;
+        @apply w-screen min-h-screen  bg-bodycol;
     }
     .content {
-        @apply px-5 pt-14 md:pt-32 bg-bodycol text-cocowhite;
+        @apply px-5 mobile:pt-16 pt-24 md:pt-44 lg:pt-32 bg-bodycol text-cocowhite;
     }
     .navbar {
         @apply p-2 md:p-5 bg-headercol text-cocowhite w-screen;
