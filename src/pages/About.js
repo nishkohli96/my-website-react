@@ -9,7 +9,7 @@ const About = () => {
 
     return (
         <div>
-            <div className="content grid grid-cols-1 lg:grid-cols-2 gap-2">
+            <div className="content grid grid-cols-1 xl:grid-cols-2 gap-2">
                 <div className="mx-auto">
                     <img
                         className="rounded-full w-40 h-40 md:w-60 md:h-60 mx-auto"

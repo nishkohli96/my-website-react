@@ -79,6 +79,18 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
+
+                <div className="text-center mt-10">
+                    <p className="sub-heading hreflink no-underline">
+                        <a
+                            href="https://zety.com/mycv/nishant18"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            View my Resume
+                        </a>
+                    </p>
+                </div>
             </div>
 
             <div className="fixed bottom-0">

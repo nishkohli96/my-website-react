@@ -3,6 +3,9 @@ public
 build
 dist
 
+Dockerfile
+Dockerfile.dev
+
 src/assets/images
 
 .env
