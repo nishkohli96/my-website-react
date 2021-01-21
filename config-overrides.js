@@ -12,6 +12,6 @@ module.exports = override(
         ['@Images']: path.resolve(__dirname, './src/assets/images'),
         ['@Pages']: path.resolve(__dirname, './src/pages'),
         ['@Styles']: path.resolve(__dirname, './src/assets/styles'),
-    })
-    // addPostcssPlugins([require('tailwindcss'), require('autoprefixer')])
+    }),
+    addPostcssPlugins([require('tailwindcss'), require('autoprefixer')])
 );

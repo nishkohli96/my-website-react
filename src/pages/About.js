@@ -9,7 +9,7 @@ const About = () => {
 
     return (
         <div>
-            <div className="content grid grid-cols-1 xl:grid-cols-2 gap-2">
+            <div className="content grid grid-cols-1 lg:grid-cols-2 gap-2">
                 <div className="mx-auto">
                     <img
                         className="rounded-full w-40 h-40 md:w-60 md:h-60 mx-auto"
@@ -33,8 +33,8 @@ const About = () => {
                 <div className="respdiv lg:max-w-lg m-auto">
                     <p className="mb-5 text-lg md:text-xl leading-8 lg:leading-relaxed">
                         I completed my B.Tech in Computer Science from Manipal
-                        Institute of Technology in 2018. Worked for 2 years in L
-                        &amp; T Technology Services, and currently I work with{' '}
+                        Institute of Technology in 2018. Worked for 2 years in
+                        LTTS, and currently I work with
                         <span className="hreflink">
                             <a
                                 href="https://www.storydigital.in/"
