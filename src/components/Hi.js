@@ -18,12 +18,12 @@ const Hi = () => {
                     <span role="img" aria-label="graduate">
                         👨‍🎓
                     </span>
-                    &nbsp;FullStack Developer with two years of experience.
+                    &nbsp;FullStack Developer with almost 4 years of experience.
                 </p>
                 <p className="text-lg lg:text-xl lg:leading-relaxed mt-5 leading-8">
                     My core skillset includes ReactJS and React-Native along
-                    with relevant experience in NodeJS, Express, Fastify,
-                    MongoDB etc. I love playing around with new libraries and
+                    with relevant experience in NodeJS, NestJS, Express, Fastify,
+                    MongoDB, Docker etc. I love playing around with new libraries and
                     frameworks.
                 </p>
                 <p className="text-lg lg:text-xl lg:leading-relaxed mt-5 leading-8">
