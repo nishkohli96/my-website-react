@@ -646,6 +646,10 @@ video {
   border-radius: 9999px;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -760,6 +764,10 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.static {
+  position: static;
 }
 
 .fixed {

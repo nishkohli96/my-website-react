@@ -1,0 +1,8 @@
+node_modules
+
+.github
+.prettierignore
+.prettierrc
+.travis.yml
+
+README.md
