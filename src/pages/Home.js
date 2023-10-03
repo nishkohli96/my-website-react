@@ -1,22 +1,13 @@
-import { useEffect } from 'react';
 import Hi from '@Components/Hi';
-import Footer from '@Components/Footer';
 
 const IndexPage = () => {
-    useEffect(() => {
-        document.title = `Home`;
-    }, []);
+  document.title = 'Home';
 
-    return (
-        <div>
-            <div className="content">
-                <Hi />
-            </div>
-            <div className="mobile:fixed md:fixed bottom-0">
-                <Footer />
-            </div>
-        </div>
-    );
+  return (
+    <div className="content">
+      <Hi />
+    </div>
+  );
 };
 
 export default IndexPage;

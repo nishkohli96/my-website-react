@@ -3,13 +3,14 @@ import Home from '@Pages/Home';
 import About from '@Pages/About';
 import Contact from '@Pages/Contact';
 import Projects from '@Pages/Projects';
-import HeaderNew from '@Components/HeaderNew';
+import Header from '@Components/Header';
+import Footer from '@Components/Footer';
 
 const Routing = () => {
   return (
     <div className="fullscreen">
       <BrowserRouter>
-        <HeaderNew />
+        <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -17,6 +18,7 @@ const Routing = () => {
           <Route path="/projects" element={<Projects />} />
           <Route element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
