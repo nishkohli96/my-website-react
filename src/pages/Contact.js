@@ -73,7 +73,7 @@ const Contact = () => {
       <div className="text-center mt-10">
         <p className="sub-heading hreflink no-underline">
           <a
-            href="https://zety.com/mycv/nishant18"
+            href="https://bold.pro/my/nishkohli96"
             target="_blank"
             rel="noreferrer"
           >
