@@ -18,12 +18,12 @@ const Footer = () => {
   }, []);
 
   useEffect(() => {
-    setFooterAtBottom(location.pathname === RoutePaths.home);
+    setFooterAtBottom(location.pathname === RoutePaths.contact);
   }, [location.pathname]);
 
   return (
     <div
-      className={classNames('navbar bottom-0', {
+      className={classNames('navbar bottom-0 py-4', {
         'mobile:fixed md:fixed': footerAtBottom,
       })}
     >
@@ -54,7 +54,8 @@ const Footer = () => {
       </div>
       <div className="text-center mt-2">
         <p>
-          Made with{'  '}&#10084;{'  '}by <i>Nish!!!!</i>
+          {`Made with  `} &#10084; {`  by  `}
+          <i>Nish!!!!</i>
         </p>
       </div>
     </div>

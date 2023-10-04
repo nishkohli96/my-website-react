@@ -32,6 +32,7 @@
         @apply mx-3 h-10 w-10;
     }
     .typeform {
+        /* min 500px height recommended for typeform */
         height: 500px;
         width: 300px;
         z-index: 999;

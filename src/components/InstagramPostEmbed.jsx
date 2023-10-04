@@ -1,9 +1,8 @@
-const InstagramPost = ({ postLink }) => {
+const InstagramPostEmbed = ({ postLink }) => {
   return (
     <blockquote
-      class="instagram-media"
-      data-instgrm-captioned
-      data-instgrm-permalink="https://www.instagram.com/reel/CvHfqjetGgk/?utm_source=ig_embed&amp;utm_campaign=loading"
+      className="instagram-media"
+      data-instgrm-permalink={postLink}
       data-instgrm-version="14"
       style={{
         background: '#FFF',
@@ -22,7 +21,7 @@ const InstagramPost = ({ postLink }) => {
       <div style={{ padding: 16 }}>
         {' '}
         <a
-          href="https://www.instagram.com/reel/CvHfqjetGgk/?utm_source=ig_embed&amp;utm_campaign=loading"
+          href={postLink}
           style={{
             background: '#FFFFFF',
             lineHeight: 0,
@@ -32,7 +31,7 @@ const InstagramPost = ({ postLink }) => {
             width: '100%',
           }}
           target="_blank"
-		  rel="noreferrer"
+          rel="noreferrer"
         >
           {' '}
           <div
@@ -98,8 +97,9 @@ const InstagramPost = ({ postLink }) => {
               viewBox="0 0 60 60"
               version="1.1"
               xmlns="https://www.w3.org/2000/svg"
+              //   xmlnsXlink="http://www.w3.org/1999/xlink"
             >
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g
                   transform="translate(-511.000000, -20.000000)"
                   fill="#000000"
@@ -266,7 +266,7 @@ const InstagramPost = ({ postLink }) => {
           }}
         >
           <a
-            href="https://www.instagram.com/reel/CvHfqjetGgk/?utm_source=ig_embed&amp;utm_campaign=loading"
+            href={postLink}
             style={{
               color: '#c9c8cd',
               fontFamily: 'Arial,sans-serif',
@@ -277,7 +277,7 @@ const InstagramPost = ({ postLink }) => {
               textDecoration: 'none',
             }}
             target="_blank"
-			rel="noreferrer"
+            rel="noreferrer"
           >
             A post shared by Nishant Kohli (@nocturnal_nish)
           </a>
@@ -287,4 +287,4 @@ const InstagramPost = ({ postLink }) => {
   );
 };
 
-export default InstagramPost
+export default InstagramPostEmbed;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import RoutePaths from '@Constants/RoutePaths';
 import logo from '../assets/images/logo.png';
 
 const Header = () => {
@@ -14,16 +15,13 @@ const Header = () => {
 
         <div className="col-span-2 sm:text-right">
           <div className="navlink link">
-            <Link to="/">Home</Link>
+            <Link to={RoutePaths.home}>Home</Link>
           </div>
           <div className="navlink link">
-            <Link to="/projects">Projects</Link>
+            <Link to={RoutePaths.projects}>Projects</Link>
           </div>
           <div className="navlink link">
-            <Link to="/about">About</Link>
-          </div>
-          <div className="navlink link">
-            <Link to="/contact">Contact</Link>
+            <Link to={RoutePaths.contact}>Contact</Link>
           </div>
         </div>
       </div>
