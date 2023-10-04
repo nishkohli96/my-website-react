@@ -1,25 +1,28 @@
-import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
+import { lazy } from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import RoutePaths from '@Constants/RoutePaths';
 import Home from '@Pages/Home';
-import About from '@Pages/About';
-import Contact from '@Pages/Contact';
-import Projects from '@Pages/Projects';
 import Header from '@Components/Header';
+import Footer from '@Components/Footer';
+
+const Projects = lazy(() => import('@Pages/Projects'));
+const Contact = lazy(() => import('@Pages/Contact'));
 
 const Routing = () => {
-    return (
-        <div className="fullscreen">
-            <BrowserRouter>
-                <Header />
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/projects" component={Projects} />
-                    <Redirect to="/" />
-                </Switch>
-            </BrowserRouter>
-        </div>
-    );
+  return (
+    <div className="fullscreen">
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route exact path={RoutePaths.home} element={<Home />} />
+          <Route path={RoutePaths.contact} element={<Contact />} />
+          <Route path={RoutePaths.projects} element={<Projects />} />
+          <Route element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default Routing;

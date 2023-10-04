@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 # run this using docker-compose
 
 FROM node:14.15.4-alpine3.10

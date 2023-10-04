@@ -5,13 +5,16 @@
 @layer components {
     /* w-max for width: fit-content */
     .fullscreen {
-        @apply w-screen min-h-screen  bg-bodycol;
+        @apply bg-bodycol min-h-screen;
     }
     .content {
-        @apply px-5 mobile:pt-16 pt-24 md:pt-44 lg:pt-32 bg-bodycol text-cocowhite;
+        @apply px-5 mobile:py-16 py-24 md:py-44 lg:py-32 bg-bodycol text-cocowhite;
+    }
+    .app-header {
+        z-index: 99999;
     }
     .navbar {
-        @apply p-2 md:p-5 bg-headercol text-cocowhite w-screen;
+        @apply p-2 md:p-5 w-full bg-headercol text-cocowhite;
     }
     .navlink {
         @apply mx-2 text-sm sm:text-xl sm:pt-2 md:text-2xl md:mx-5  inline font-bold;
@@ -27,6 +30,17 @@
     }
     .icon {
         @apply mx-3 h-10 w-10;
+    }
+    .typeform {
+        /* min 500px height recommended for typeform */
+        height: 500px;
+        width: 300px;
+        z-index: 999;
+        @media only screen and (min-width: 768px) {
+            margin-top: -40px;
+            width: 100%;
+            height: 550px;
+        }
     }
 }
 
