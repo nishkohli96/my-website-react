@@ -2,7 +2,8 @@ const Contact = () => {
   document.title = 'Contact';
   /**
    *  Typeform embed script tag needs to be placed
-   *  in the body of public/index.html
+   *  in the body of public/index.html and would
+   *  run on https only.
    */
   return (
     <div className="content">
