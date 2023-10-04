@@ -636,6 +636,14 @@ video {
   width: 2.5rem;
 }
 
+.typeform {
+  height: 500px;
+  width: 300px;
+  @media only screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
@@ -671,10 +679,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .justify-center {
@@ -767,10 +771,6 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .p-4 {

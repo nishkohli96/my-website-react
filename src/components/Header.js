@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png';
 
 const Header = () => {
   return (
-    <div className="navbar fixed">
+    <div className="app-header navbar fixed">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
         <div className="hidden sm:inline-block col-span-1">
           <Link to="/">

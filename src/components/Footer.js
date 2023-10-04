@@ -30,7 +30,11 @@ const Footer = () => {
       <div className="flex justify-center">
         <ul style={{ listStyleType: 'none' }}>
           {socialMediaHandles.map((sm) => (
-            <li className="mr-4" style={{ display: 'inline-block' }}>
+            <li
+              key={sm?.fields?.name}
+              className="mr-4"
+              style={{ display: 'inline-block' }}
+            >
               <a
                 href={sm?.fields?.handle}
                 target="_blank"

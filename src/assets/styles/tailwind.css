@@ -10,6 +10,9 @@
     .content {
         @apply px-5 mobile:py-16 py-24 md:py-44 lg:py-32 bg-bodycol text-cocowhite;
     }
+    .app-header {
+        z-index: 99999;
+    }
     .navbar {
         @apply p-2 md:p-5 w-full bg-headercol text-cocowhite;
     }
@@ -27,6 +30,16 @@
     }
     .icon {
         @apply mx-3 h-10 w-10;
+    }
+    .typeform {
+        height: 500px;
+        width: 300px;
+        z-index: 999;
+        @media only screen and (min-width: 768px) {
+            margin-top: -40px;
+            width: 100%;
+            height: 550px;
+        }
     }
 }
 

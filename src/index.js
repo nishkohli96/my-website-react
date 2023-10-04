@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@Styles/index.css';
-// import '@Styles/tailwind.css';
+// import '@Styles/index.css';
+import '@Styles/tailwind.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
