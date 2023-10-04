@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <div
       className={classNames('navbar bottom-0 py-4', {
-        'mobile:fixed md:fixed': footerAtBottom,
+        'mobile:fixed xs:fixed md:absolute': footerAtBottom,
       })}
     >
       <div className="flex justify-center">

@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import InstagramPostEmbed from '@Components/InstagramPostEmbed';
 import InstagramPosts from '@Constants/InstagramPosts';
 
-const IndexPage = () => {
+const IndexPage = memo(function Home() {
   document.title = 'Home';
 
   return (
@@ -98,6 +99,6 @@ const IndexPage = () => {
       </div>
     </div>
   );
-};
+});
 
 export default IndexPage;
