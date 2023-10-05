@@ -3,7 +3,7 @@
 # Dockerfile for production env
 
 ### Phase 1 - Build our app
-FROM node:14.15.4-alpine3.10
+FROM node:18-alpine3.17
 
 # For specific environment
 # ENV NODE_ENV=production

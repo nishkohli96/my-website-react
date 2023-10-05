@@ -1,5 +1,5 @@
 {
-  "name": "nishwebsite",
+  "name": "nishant-profile",
   "version": "1.0.0",
   "author": "Nishant Kohli",
   "private": true,
@@ -21,7 +21,7 @@
   "scripts": {
     "build-styles": "tailwindcss build -i src/assets/styles/tailwind.css -o src/assets/styles/index.css",
     "start": "yarn build-styles && react-app-rewired start",
-    "build": "yarn build-styles && react-app-rewired build",
+    "build": "react-app-rewired build",
     "test": "echo \"Error: no test specified\" && exit 0",
     "eject": "react-scripts eject"
   },
