@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
 import RoutePaths from '@Constants/RoutePaths';
 import Header from '@Components/Header';
 import Footer from '@Components/Footer';
@@ -15,7 +15,7 @@ const Routing = () => {
           <Route exact path={RoutePaths.home} element={<Home />} />
           <Route path={RoutePaths.contact} element={<Contact />} />
           <Route path={RoutePaths.projects} element={<Projects />} />
-          <Route element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </BrowserRouter>
