@@ -1,7 +1,8 @@
+import { memo } from 'react';
 import InstagramPostEmbed from '@Components/InstagramPostEmbed';
 import InstagramPosts from '@Constants/InstagramPosts';
 
-const IndexPage = () => {
+const IndexPage = memo(function Home() {
   document.title = 'Home';
 
   return (
@@ -73,7 +74,7 @@ const IndexPage = () => {
             <span role="img" aria-label="mountains">
               ⛰️
             </span>{' '}
-            of Ladakh and the valleys of Kashmir{' '}
+            of Ladakh and the beautiful valleys of Kashmir{' '}
             <span role="img" aria-label="flowers">
               🌼
             </span>{' '}
@@ -89,7 +90,7 @@ const IndexPage = () => {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:px-5 md:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 md:px-20 md:grid-cols-2 gap-10">
         {InstagramPosts.map((post, idx) => (
           <div className="flex justify-center" key={idx}>
             <InstagramPostEmbed postLink={post} />
@@ -98,6 +99,6 @@ const IndexPage = () => {
       </div>
     </div>
   );
-};
+});
 
 export default IndexPage;

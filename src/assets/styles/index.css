@@ -649,13 +649,6 @@ video {
   color: rgb(247 246 243 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .content {
-    padding-top: 11rem;
-    padding-bottom: 11rem;
-  }
-}
-
 @media (min-width: 1024px) {
   .content {
     padding-top: 8rem;
@@ -772,6 +765,10 @@ video {
 
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .bottom-0 {
@@ -907,10 +904,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -993,8 +986,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
+  .md\:absolute {
+    position: absolute;
   }
 
   .md\:mt-10 {
@@ -1008,11 +1001,6 @@ video {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-
-  .md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .md\:pt-10 {
@@ -1045,9 +1033,9 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
-  .xl\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (min-width: 300px) {
+  .xs\:fixed {
+    position: fixed;
   }
 }
 

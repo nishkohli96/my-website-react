@@ -1,12 +1,10 @@
-import { lazy } from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter, Navigate } from 'react-router-dom';
 import RoutePaths from '@Constants/RoutePaths';
-import Home from '@Pages/Home';
 import Header from '@Components/Header';
 import Footer from '@Components/Footer';
-
-const Projects = lazy(() => import('@Pages/Projects'));
-const Contact = lazy(() => import('@Pages/Contact'));
+import Home from '@Pages/Home';
+import Projects from '@Pages/Projects';
+import Contact from '@Pages/Contact';
 
 const Routing = () => {
   return (
@@ -17,7 +15,7 @@ const Routing = () => {
           <Route exact path={RoutePaths.home} element={<Home />} />
           <Route path={RoutePaths.contact} element={<Contact />} />
           <Route path={RoutePaths.projects} element={<Projects />} />
-          <Route element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </BrowserRouter>

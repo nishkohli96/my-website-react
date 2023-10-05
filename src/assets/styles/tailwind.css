@@ -8,7 +8,7 @@
         @apply bg-bodycol min-h-screen;
     }
     .content {
-        @apply px-5 mobile:py-16 py-24 md:py-44 lg:py-32 bg-bodycol text-cocowhite;
+        @apply px-5 mobile:py-16 py-24 lg:py-32 bg-bodycol text-cocowhite;
     }
     .app-header {
         z-index: 99999;
